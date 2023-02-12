@@ -1,0 +1,244 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: blueviolet;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: relative;
+    background: dodgerblue;
+    padding: 34px;
+    margin:2px 55px;
+    text-emphasis-color: Red;
+    height:642px;
+    top:100px;
+    left:100px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    
+}
+
+#home h1{
+    color:red;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+    font-size:36px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home p{
+    color: blue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=7HA0cgdT&id=65CAFEEB0139A59ACD635CB8F405B656E2169A1B&thid=OIP.7HA0cgdTe6gKPavWESzXtQHaEy&mediaurl=https%3a%2f%2fwww.knockdigital.com%2fwp-content%2fuploads%2f2014%2f03%2fclient-background.jpg&exph=1323&expw=2048&q=clients+name+dispalying+background&simid=607999698324778134&FORM=IRPRST&ck=19C8FC42F13D0A454BF9F44767765D05&selectedIndex=23');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+    background-color: black;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://www.bing.com/ck/a?!&&p=a1bee61d04d9f288JmltdHM9MTY3NTM4MjQwMCZpZ3VpZD0zMWY2NjBlNS1iZmViLTY5N2ItMDhmMi03MjhjYmU0NjY4MWEmaW5zaWQ9NTU0OA&ptn=3&hsh=3&fclid=31f660e5-bfeb-697b-08f2-728cbe46681a&u=a1L2ltYWdlcy9zZWFyY2g_cT1Db250YWN0JTIwSW1hZ2VzJTIwZm9yJTIwV2Vic2l0ZSZGT1JNPUlRRlJCQSZpZD03QkQ5RkYzMDg3MzI0MDJGQkE2RjE3QURENzA3M0I1QTY5RkJFNkUz&ntb=1") no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background: black;
+    color: rgb(238, 179, 29);
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(173, 44, 44);
+    background-color: brown;
+    color: rgb(16, 172, 146);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+.h{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
